@@ -43,7 +43,7 @@ async def on_message(message):
     await bot.process_commands(message)
 
 # Récupération et lancement du token
-TOKEN = os.getenv("DISCORD_BOT_TOKEN")
+TOKEN = os.getenv("TOKEN")
 if TOKEN:
     bot.run(TOKEN)
 else:
